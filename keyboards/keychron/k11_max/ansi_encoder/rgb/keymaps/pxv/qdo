@@ -1,0 +1,36 @@
+#!/bin/zsh
+keyboard=keychron/k11_max/ansi_encoder/rgb
+keymap=pxv
+
+echo 
+echo "-----"
+echo Keyboard: $keyboard
+echo Keymap: $keymap
+echo Option: $1
+echo 
+echo "y to continue?"
+read 
+if [ $REPLY != "y" ]; then
+    return
+fi
+
+if [ $# -ne "1" ]; then 
+    echo 'Requires "compile", "flash", or "both"'
+fi
+
+if [ $1 = "compile" ]; then 
+    qmk compile -kb $keyboard -km $keymap
+    echo "Compiled"
+fi
+
+if [ $1 = "flash" ]; then 
+    qmk flash -kb $keyboard -km $keymap
+    echo "Flashed"
+fi
+
+if [ $1 = "both" ]; then
+    echo "Compile then flash"
+    qmk compile -kb $keyboard -km $keymap
+    qmk flash -kb $keyboard -km $keymap
+fi
+
