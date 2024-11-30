@@ -35,7 +35,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [MAC_BASE] = LAYOUT_ansi_68(
      KC_ESC,   KC_1,     KC_2,     KC_3,     KC_4,     KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     KC_MINS,  KC_EQL,   KC_BSPC, RGB_MOD,
      KC_TAB,  KC_QUOT,     KC_COMMA,     KC_DOT,    KC_P,    KC_Y,    KC_F,     KC_G,    KC_C,    KC_R,    KC_L,     KC_LBRC,  KC_RBRC,  KC_BSLS,  KC_HOME,
-     KC_LEAD, KC_A,     KC_O,     KC_E,    KC_U,    LSFT_T(KC_I),      RSFT_T(KC_D),    KC_H,    KC_T,    KC_N,     KC_S,  KC_MINS,     KC_ENT, KC_PGUP ,
+     QK_LEAD, KC_A,     KC_O,     KC_E,    KC_U,    LSFT_T(KC_I),      RSFT_T(KC_D),    KC_H,    KC_T,    KC_N,     KC_S,  KC_MINS,     KC_ENT, KC_PGUP ,
      KC_LSFT,  KC_SCLN,     KC_Q,  LCMD_T(KC_J),  LCTL_T(KC_K),    LOPT_T(KC_X),    ROPT_T(KC_B),    RCTL_T(KC_M), RCMD_T(KC_W),  KC_V,   KC_Z,  KC_RSFT, KC_UP, KC_PGDN,
      KC_LCTL,  KC_LOPTN, MO(MAC_FN1),                               KC_SPC,                       MO(FN2),KC_LCMMD, KC_RCMMD,KC_LEFT,  KC_DOWN, KC_RGHT),
 
@@ -47,7 +47,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      KC_LCTL,  KC_LGUI,  KC_LALT,                                KC_SPC,                       KC_RALT, MO(WIN_FN1),MO(FN2), KC_LEFT,  KC_DOWN, KC_RGHT),
 
 [MAC_FN1] = LAYOUT_ansi_68(
-     KC_GRV,   KC_BRID,  KC_BRIU,  KC_MCTL,  KC_LNPD,  RGB_VAD,  RGB_VAI,  KC_MPRV,  KC_MPLY,  KC_MNXT,  KC_MUTE,  KC_VOLD,  KC_VOLU,  _______,  RGB_TOG,
+     KC_GRV,   KC_BRID,  KC_BRIU,  KC_MCTL,  KC_LPAD,  RGB_VAD,  RGB_VAI,  KC_MPRV,  KC_MPLY,  KC_MNXT,  KC_MUTE,  KC_VOLD,  KC_VOLU,  _______,  RGB_TOG,
+ //    KC_GRV,   KC_BRID,  KC_BRIU,  KC_MCTL,  KC_LNPD,  RGB_VAD,  RGB_VAI,  KC_MPRV,  KC_MPLY,  KC_MNXT,  KC_MUTE,  KC_VOLD,  KC_VOLU,  _______,  RGB_TOG,
      _______,  _______,  _______,  KC_UP,    _______,   _______, _______,  KC_7,     KC_8,     KC_9,     _______,  _______,  _______, _______,    RESET,
      _______,  KC_HOME, KC_LEFT,  KC_DOWN,  KC_RIGHT, KC_END,    _______, KC_4,      KC_5,     KC_6,     _______,  _______,  _______,            _______,
      _______,  _______, KC_PGUP, _______, KC_PGDN,    KC_ACL1,   KC_ACL2, KC_1,      KC_2,      KC_3,  _______,    _______,   _______, _______,
