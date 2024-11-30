@@ -1,4 +1,4 @@
-#define IGNORE_MOD_TAP_INTERRUPT
+// #define IGNORE_MOD_TAP_INTERRUPT
 #define RETRO_TAPPING
 #define TAPPING_TERM 200
 
@@ -13,8 +13,8 @@
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 
 // Leader Key
-#define LEADER_TIMEOUT             900
-#define LEADER_PER_KEY_TIMING      300
+#define LEADER_TIMEOUT             400 // was 900
+#define LEADER_PER_KEY_TIMING      200 // was 300
 
 // Mouse key speed and acceleration.
 #undef MOUSEKEY_DELAY
@@ -29,6 +29,6 @@
 #undef MOUSEKEY_WHEEL_DELAY
 #define MOUSEKEY_WHEEL_DELAY    0
 #undef MOUSEKEY_MAX_SPEED
-#define MOUSEKEY_MAX_SPEED      6
+#define MOUSEKEY_MAX_SPEED      4 // was 6
 #undef MOUSEKEY_TIME_TO_MAX
 #define MOUSEKEY_TIME_TO_MAX    64

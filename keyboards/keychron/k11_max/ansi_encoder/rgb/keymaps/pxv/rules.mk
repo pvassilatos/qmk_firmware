@@ -5,5 +5,3 @@ LEADER_ENABLE = yes
 
 VPATH += keyboards/gboards  # FOR GBOARD COMBOS
 COMBO_ENABLE = yes          # for any combos
-
-

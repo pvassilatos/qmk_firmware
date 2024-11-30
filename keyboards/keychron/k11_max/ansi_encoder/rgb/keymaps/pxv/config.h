@@ -1,15 +1,14 @@
-// #define IGNORE_MOD_TAP_INTERRUPT
 #define RETRO_TAPPING
 #define TAPPING_TERM 200
 
 #define TAPPING_TOGGLE 3
 
-// #define COMBO_VARIABLE_LEN 
-// #define COMBO_TERM 25
+#define COMBO_VARIABLE_LEN 
+#define COMBO_TERM 25
 
 #define MK_COMBINED
 
-// #define ENCODER_DIRECTION_FLIP
+// #define ENCODER_DIRECTION_FLIP - not needed for k11_max
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 
 // Leader Key

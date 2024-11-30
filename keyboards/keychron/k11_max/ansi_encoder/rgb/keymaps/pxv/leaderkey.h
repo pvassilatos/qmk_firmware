@@ -18,7 +18,7 @@ void leader_end_user(void) {
       SEND_STRING("Querty");
     
     } else if (leader_sequence_one_key(KC_D)) {                // year and month
-      SEND_STRING("2023-10-");
+      SEND_STRING("2024-11-");
     
     } else if (leader_sequence_one_key(KC_R)) {                // Regards, \nPeter
       SEND_STRING("Regards,\nPeter");
